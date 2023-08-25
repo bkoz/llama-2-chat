@@ -3,5 +3,7 @@ echo "Before running application"
 echo "Downloading model ..."
 echo "ACCESS_KEY = " ${ACCESS_KEY}
 echo "SECRET_KEY = " ${SECRET_KEY}
+echo "S3_ENDPOINT = " ${S3_ENDPOINT}
+s3cmd get --recursive --access_key=${ACCESS_KEY} --secret_key=${SECRET_KEY} ${S3_ENDPOINT} .
 
 exec /usr/libexec/s2i/run
