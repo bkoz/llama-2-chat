@@ -3,6 +3,7 @@ echo "Before assembling"
 
 echo "Downloading model ..."
 echo "ACCESS_KEY = " ${ACCESS_KEY}
+echo "SECRET_KEY = " ${SECRET_KEY}
 
 /usr/libexec/s2i/assemble
 rc=$?
