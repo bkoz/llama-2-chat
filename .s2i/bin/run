@@ -1,0 +1,7 @@
+#!/bin/bash
+echo "Before running application"
+echo "Downloading model ..."
+echo "ACCESS_KEY = " ${ACCESS_KEY}
+echo "SECRET_KEY = " ${SECRET_KEY}
+
+exec /usr/libexec/s2i/run
