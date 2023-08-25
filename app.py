@@ -1,5 +1,6 @@
 import os
+import time
 
 print(f'Llama-2 app goes here ...')
 print(f'sleeping')
-sleep(180)
+time.sleep(180)
